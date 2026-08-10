@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <linearGradient id="fsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2a3a"/>
+      <stop offset="100%" stop-color="#7a5236"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#fsky)"/>
+
+  <!-- fog -->
+  <ellipse cx="450" cy="520" rx="500" ry="90" fill="#e9d3a8" opacity="0.14"/>
+
+  <!-- tree silhouettes, layered depth -->
+  <g fill="#1c130f" opacity="0.55">
+    <path d="M40,700 L40,420 L70,300 L100,420 L100,700 Z"/>
+    <path d="M780,700 L780,380 L820,240 L860,380 L860,700 Z"/>
+    <path d="M150,700 L150,460 L175,360 L200,460 L200,700 Z"/>
+  </g>
+  <g fill="#150e0a">
+    <path d="M220,700 L220,340 L260,180 L300,340 L300,700 Z"/>
+    <path d="M600,700 L600,320 L650,150 L700,320 L700,700 Z"/>
+  </g>
+
+  <!-- path light -->
+  <ellipse cx="450" cy="640" rx="220" ry="30" fill="#eec36a" opacity="0.18"/>
+
+  <!-- girl walking into the forest, from behind -->
+  <g transform="translate(450,560)">
+    <path d="M-40,120 C-52,50 -34,10 0,0 C34,10 52,50 40,120 Z" fill="#120c08"/>
+    <circle cx="0" cy="-24" r="22" fill="#120c08"/>
+    <path d="M14,-28 C24,-8 20,20 26,58 C28,70 22,74 16,68 C20,34 16,0 8,-26 Z" fill="#0d0906"/>
+  </g>
+</svg>

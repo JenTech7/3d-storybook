@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2620"/>
+      <stop offset="100%" stop-color="#20140f"/>
+    </linearGradient>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1626"/>
+      <stop offset="100%" stop-color="#4a3226"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#room)"/>
+  <!-- window frame -->
+  <rect x="260" y="60" width="420" height="480" fill="url(#night)"/>
+  <rect x="255" y="55" width="430" height="10" fill="#150d0a"/>
+  <rect x="255" y="530" width="430" height="10" fill="#150d0a"/>
+  <rect x="465" y="55" width="10" height="485" fill="#150d0a"/>
+  <rect x="255" y="290" width="430" height="10" fill="#150d0a"/>
+
+  <!-- stars + moon -->
+  <circle cx="600" cy="150" r="34" fill="#f3e3b8"/>
+  <g fill="#f3e3b8" opacity="0.7">
+    <circle cx="320" cy="110" r="1.6"/>
+    <circle cx="380" cy="150" r="1.4"/>
+    <circle cx="430" cy="90" r="1.8"/>
+  </g>
+
+  <!-- distant lit window of the abandoned house -->
+  <g transform="translate(330,360)">
+    <rect x="0" y="0" width="46" height="60" fill="#eec36a" opacity="0.85"/>
+  </g>
+
+  <!-- girl silhouette seated at the sill, consistent design -->
+  <g transform="translate(560,470)">
+    <path d="M-60,140 C-75,60 -50,10 0,-6 C50,10 75,60 60,140 Z" fill="#140d0a"/>
+    <circle cx="0" cy="-60" r="30" fill="#140d0a"/>
+    <path d="M18,-64 C30,-40 26,0 34,50 C36,66 28,72 20,64 C24,20 20,-24 10,-58 Z" fill="#0f0a08"/>
+  </g>
+
+  <!-- small clock reading 11:11 -->
+  <g transform="translate(120,120)">
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#eec36a" stroke-width="3" opacity="0.85"/>
+    <line x1="0" y1="0" x2="0" y2="-20" stroke="#eec36a" stroke-width="3"/>
+    <line x1="0" y1="0" x2="15" y2="-14" stroke="#eec36a" stroke-width="3"/>
+    <text x="0" y="55" text-anchor="middle" fill="#eec36a" font-family="serif" font-size="20" opacity="0.85">11:11</text>
+  </g>
+</svg>

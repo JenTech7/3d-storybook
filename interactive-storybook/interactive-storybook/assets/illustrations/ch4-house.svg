@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#241a2a"/>
+      <stop offset="100%" stop-color="#5a3a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#hsky)"/>
+
+  <!-- ivy-covered hidden house -->
+  <g transform="translate(450,340)">
+    <rect x="-180" y="0" width="360" height="240" fill="#1a120d"/>
+    <polygon points="-200,0 0,-140 200,0" fill="#130d09"/>
+    <rect x="-30" y="120" width="60" height="120" fill="#0c0805"/>
+    <rect x="-140" y="60" width="50" height="60" fill="#eec36a" opacity="0.5"/>
+    <rect x="90" y="60" width="50" height="60" fill="#eec36a" opacity="0.3"/>
+  </g>
+
+  <!-- ivy strands -->
+  <g stroke="#3a4a2a" stroke-width="4" fill="none" opacity="0.7">
+    <path d="M290,400 C310,460 300,520 330,580"/>
+    <path d="M610,420 C590,470 605,520 580,580"/>
+  </g>
+
+  <!-- girl approaching the door -->
+  <g transform="translate(450,600)">
+    <path d="M-36,100 C-46,40 -30,8 0,0 C30,8 46,40 36,100 Z" fill="#100b07"/>
+    <circle cx="0" cy="-20" r="20" fill="#100b07"/>
+    <path d="M12,-24 C20,-6 18,18 22,50 C24,60 18,64 13,58 C17,30 14,2 6,-22 Z" fill="#0b0806"/>
+  </g>
+</svg>

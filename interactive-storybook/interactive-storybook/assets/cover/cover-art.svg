@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b1d2a"/>
+      <stop offset="45%" stop-color="#4a2f30"/>
+      <stop offset="100%" stop-color="#7a4a34"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f3e3b8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f3e3b8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b2620"/>
+      <stop offset="100%" stop-color="#1c130f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#f6e9c9" opacity="0.8">
+    <circle cx="80" cy="120" r="2"/>
+    <circle cx="180" cy="80" r="1.6"/>
+    <circle cx="640" cy="140" r="2"/>
+    <circle cx="700" cy="220" r="1.4"/>
+    <circle cx="120" cy="260" r="1.4"/>
+    <circle cx="560" cy="90" r="1.8"/>
+    <circle cx="300" cy="60" r="1.4"/>
+    <circle cx="430" cy="150" r="1.6"/>
+  </g>
+
+  <!-- moon -->
+  <circle cx="620" cy="180" r="120" fill="url(#moonGlow)"/>
+  <circle cx="620" cy="180" r="46" fill="#f6e8c4"/>
+
+  <!-- distant hills -->
+  <path d="M0,780 C150,720 300,760 400,730 C520,700 650,760 800,720 L800,1200 L0,1200 Z" fill="url(#hill)"/>
+
+  <!-- the house across the way, small, window lit -->
+  <g transform="translate(560,650)">
+    <rect x="0" y="40" width="120" height="110" fill="#1a110d"/>
+    <polygon points="-10,40 60,-10 130,40" fill="#140d0a"/>
+    <rect x="45" y="75" width="30" height="40" fill="#f3c96a" opacity="0.85"/>
+  </g>
+
+  <!-- foreground window frame the reader looks through -->
+  <rect x="0" y="850" width="800" height="350" fill="#1c130f"/>
+  <rect x="60" y="820" width="680" height="30" fill="#150e0b"/>
+
+  <!-- girl silhouette at window, consistent character: braid, long dress -->
+  <g transform="translate(400,1010)">
+    <!-- dress -->
+    <path d="M-70,190 C-90,80 -60,10 0,-10 C60,10 90,80 70,190 Z" fill="#241811"/>
+    <!-- torso/shawl -->
+    <path d="M-38,10 C-45,-40 -20,-70 0,-72 C20,-70 45,-40 38,10 C20,-4 -20,-4 -38,10 Z" fill="#2c1d15"/>
+    <!-- head -->
+    <circle cx="0" cy="-96" r="34" fill="#241811"/>
+    <!-- braid -->
+    <path d="M22,-100 C36,-70 30,-20 40,40 C42,60 34,66 24,58 C30,10 26,-40 14,-88 Z" fill="#1d130e"/>
+  </g>
+
+  <!-- title plate -->
+  <rect x="0" y="0" width="800" height="1200" fill="#1c130f" opacity="0.06"/>
+</svg>
